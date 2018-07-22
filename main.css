@@ -1,0 +1,16 @@
+label {
+    display: block;
+    font-weight: bold;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+.noticia .titulo {
+    font-weight: bold;
+}
+
+.noticia .conteudo {
+    display: none;
+}

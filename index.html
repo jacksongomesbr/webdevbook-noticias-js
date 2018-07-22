@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gerenciador de notícias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Gerenciador de notícias</h1>
+    <h2>Notícias recentes</h2>
+    <p>Clique no título da notícia para expandir</p>
+    <div id="noticias-recentes">
+        <ul id="noticias-recentes-list"></ul>
+    </div>
+
+    <h2>Cadastrar notícia</h2>
+    <form onsubmit="salvar(this); return false;">
+        <div>
+            <label for="frm-titulo">Título</label>
+            <input type="text" id="frm-titulo" name="titulo" required>
+        </div>
+        <div>
+            <label for="frm-conteudo">Conteúdo</label>
+            <textarea id="frm-conteudo" name="conteudo" cols="80" rows="5" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Salvar</button>
+            <button type="reset" formnovalidate>Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
